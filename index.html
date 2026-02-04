@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Brew</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: black;
+    }
+    .font-h1{
+      font-family: roboto-serif;
+      font-weight:lighter;
+    }
+    a{
+      text-decoration: none;
+    }
+    .hero{
+      background-image: url("./assets/HeroImg.png");
+      /* height: 100vh;
+      width: 100vw; */
+      background-size: cover;
+      background-position: center;
+    }
+    .li-heading{
+      font-size:large;
+      font-family: roboto-serif;
+    }
+    .li-para{
+      font-weight:200;
+    }
+    .sec-footer{
+      background-image: url("assets/FooterImg.png");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="relative">
+      <div class="sticky top-0 flex bg-black/80 items-center justify-between backdrop-blur-md px-4 py-2 md:px-20 md:py-4 text-white">
+        <div>
+            <img class="h-16 md:h-24 rounded-[50%]" src="./assets/Logo.png" alt="logoImg" >
+        </div>
+
+        <nav class="hidden items-center md:flex justify-between gap-[6vw] ">
+            <ul class="flex justify-center items-center text-xl gap-[4vw]">
+              <li><a href="#">Home</a></li>
+              <li><a href="/menu.html">Menu</a></li>
+              <li><a href="/index.html#ourServices">Services</a></li>
+              <li><a href="/index.html#aboutUs">About</a></li>
+            </ul>
+            <a class="bg-[#2B4A72] px-4 py-2 rounded-3xl" href="/contact.html">Contact us</a>
+        </nav>
+
+        <div id="menuTab" class="md:hidden">
+          <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+          <svg class="crossIcon hidden"  xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+        </div>
+    </div>
+
+      <div class="menuList hidden absolute text-white bg-black/90 w-full flex flex-col gap-5 items-center py-10">
+        <a href="">Home</a>
+        <a href="">Menu</a>
+        <a href="">Services</a>
+        <a href="">About</a>
+        <a class="bg-[#2B4A72] px-4 py-2 rounded-3xl" href="/contact.html">Contact us</a>
+      </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="top-0 bg-left md:bg-center h-[800px] md:h-screen hero bg-black/65 md:bg-black/20 bg-blend-multiply text-white text-center pt-60 md:pt-0 px-4">
+    <div class="md:float-right md:mt-40 md:pr-24">
+      <h1 class="font-h1 text-4xl md:text-6xl leading-normal md:leading-relaxed mb-5 ">
+        A GOOD DAY STARTS <br>
+        WITH A <br>
+        CUP OF COFFEE
+      </h1>
+
+      <a class="bg-[#F8641B] max-w-28 px-4 py-2 md:px-6 md:py-3 rounded-3xl md:text-xl" href="/menu.html">View Menu</a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="aboutUs" class="bg-white w-full px-5 pt-16 md:pt-32 text-center md:px-20 ">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-h1">Why Choose Us?</h2>
+      <div class="w-10 h-0.5 bg-[#F8641B] m-auto rounded-3xl mb-10"></div>
+    </div>
+    <div class="flex justify-between items-center md:mt-16">
+      <ol class="text-start flex flex-col gap-5 md:max-w-[700px]">
+        <li >
+          <p class="li-heading md:text-2xl">1) Premium Quality Coffee & Fresh Ingredients</p>
+          <p class="li-para md:text-lg">&emsp; We use hand-picked coffee beans, sustainably sourced, and prepare every dish with fresh, locally-sourced ingredients no artificial flavors or preservatives.</p>
+        </li>
+
+        <li>
+          <p class="li-heading md:text-2xl">2) Cozy & Comfortable Ambience</p>
+          <p class="li-para md:text-lg">&emsp; Enjoy a warm, relaxing atmosphere with comfortable seating, free Wi-Fi, and charging ports—perfect for studying, working, or hanging out.</p>
+        </li>
+
+        <li>
+          <p class="li-heading md:text-2xl">3) Friendly & Personalized Service</p>
+          <p class="li-para md:text-lg">&emsp; Our trained staff ensures quick, welcoming, and attentive service, making every visit feel special.</p>
+        </li>
+
+        <li>
+          <p class="li-heading md:text-2xl">4) Diverse & Delicious Menu Options</p>
+          <p class="li-para md:text-lg">&emsp; From breakfast to desserts, signature drinks to vegan choices, our menu offers something for everyone—including seasonal specials.</p>
+        </li>
+      </ol>
+
+      <img class="hidden md:flex min-w-[250px] mr-10" src="./assets/drink.png" alt="Iced Coffee" width="200">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="ourServices" class="bg-white w-full px-5 pt-20 pb-16 md:py-32 text-center">
+    <div>
+      <h2 class="text-4xl font-h1 md:text-6xl">Our Services</h2>
+      <div class="w-10 h-0.5 bg-[#F8641B] m-auto rounded-3xl mb-10"></div>
+    </div>
+
+    <div class="flex justify-between items-center gap-5 md:px-20 md:mt-16">
+      <img class="hidden md:flex w-[250px]" src="./assets/barista.png" alt="Barista making coffee" width="300">
+
+      <ol class="text-start flex flex-col gap-5 max-w-[700px] md:mr-10">
+        <li >
+          <p class="li-heading md:text-2xl">1) Takeout & Quick Grab-and-Go</p>
+          <p class="li-para md:text-lg">&emsp; Order your favorite coffee, snacks, and meals for fast pickup. Ideal for busy mornings or on-the-go customers.</p>
+        </li>
+
+        <li>
+          <p class="li-heading md:text-2xl">2) Home Delivery Services</p>
+          <p class="li-para md:text-lg">&emsp; Get freshly brewed coffee and meals delivered to your doorstep through our delivery partners or direct ordering.</p>
+        </li>
+
+        <li>
+          <p class="li-heading md:text-2xl">3) Monthly Coffee & Meal Subscriptions</p>
+          <p class="li-para md:text-lg">&emsp; Subscribe to our monthly plans for discounted coffees, meals, and exclusive member-only perks. Ideal for regular café lovers.</p>
+        </li>
+
+        <li>
+          <p class="li-heading md:text-2xl">4) Event & Birthday Hosting</p>
+          <p class="li-para md:text-lg">&emsp; We host small birthday parties, meet-ups, and private events with customizable menus and decorations to make your celebration special.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sec-footer bg-white text-white flex flex-col gap-5 py-6 md:px-20 md:py-12">
+    <div class="text-center">
+      <h3 class="font-h1 text-xl md:text-4xl">MModern Brew</h3>
+      <p class="li-para md:text-xl">A Good Day Starts With A Cup Of Coffee</p>
+    </div>
+
+    <p class="flex items-center text-lg justify-between px-5">
+      <a href="#">Terms & conditions</a> 
+      <a href="#">Copyright policy</a> 
+      <a href="#">Consumer Health and policy</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
