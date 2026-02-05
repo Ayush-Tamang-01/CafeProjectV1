@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MModern Brew</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -40,9 +40,9 @@
     <!-- Navigation -->
   <header class="relative">
       <div class="sticky top-0 flex bg-black/80 items-center justify-between backdrop-blur-md px-4 py-2 md:px-20 md:py-4 text-white">
-        <div>
+        <a href="./index.html">
             <img class="h-16 md:h-24 rounded-[50%]" src="./assets/Logo.png" alt="logoImg" >
-        </div>
+        </a>
 
         <nav class="hidden items-center md:flex justify-between gap-[6vw] ">
             <ul class="flex justify-center items-center text-xl gap-[4vw]">
@@ -74,19 +74,75 @@
   </header>
 
     <!-- Contact Section -->
-    <section class="h-screen bg-white">
+    <section class="min-h-screen bg-white">
         <div class="text-center pt-14">
-            <h1 class="font-h1 text-4xl">Our Contact</h1>
+            <h1 class="font-h1 text-4xl md:text-6xl">Our Contact</h1>
             <div class="w-16 h-0.5 bg-[#F8641B] m-auto rounded-3xl mb-10"></div>
         </div>
         
-        <div>
-          <div>
+        <div class="flex flex-col md:flex-row md:px-20 py-10 md:py-16">
+          <div class="flex flex-col md:flex-1 gap-5 px-5 items-center">
+            <a href="https://www.google.com/maps/place/Hacienda+La+Esmeralda/@8.7343399,-82.464081,2049m/data=!3m1!1e3!4m6!3m5!1s0x8fa59369699799e3:0xa03a8015e7985302!8m2!3d8.734923!4d-82.4598745!16s%2Fg%2F11g_2pc0n?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D" class="bg-[#D9D9D9] w-full rounded-md flex flex-col gap-1 items-center py-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg>
+              <h1 class="text-2xl md:text-3xl font-h1">Find Us At</h1>
+              <p class="font-thin text-lg">Place, District</p>
+            </a>
 
+            <a href="tel:+9779847260600" class="bg-[#D9D9D9] w-full rounded-md flex flex-col gap-1 items-center py-4" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+              </svg>
+              <h1 class="text-2xl md:text-3xl font-h1">Give Us A Call</h1>
+              <p class="text-lg font-thin">Contact Details</p>
+            </a>
+
+            <a href="mailto:ayush.bomjan01@gmail.com" class="bg-[#D9D9D9] w-full rounded-md flex flex-col gap-1 items-center py-4" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016"/>
+              </svg>
+              <h1 class="text-2xl md:text-3xl font-h1">Write To Us</h1>
+              <p class="text-lg font-thin">mmoderncafe@gmail.com</p>
+            </a>
+            <div class="w-full">
+              <iframe class="w-full h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8924.751873298084!2d-82.46408098208587!3d8.734339890164392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa59369699799e3%3A0xa03a8015e7985302!2sHacienda%20La%20Esmeralda!5e1!3m2!1sen!2snp!4v1770294285034!5m2!1sen!2snp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="text-blue-300" href="https://www.google.com/maps/place/Lekali+Coffee+Estate+P.+Ltd./@27.7214955,85.2811896,39021m/data=!3m1!1e3!4m6!3m5!1s0x39eb20990b5fd951:0xc708ce6e69f5acdc!8m2!3d27.8337587!4d85.2139317!16s%2Fg%2F11hb3trk9v?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoASAFQAw%3D%3D">Click here to view our nearby Coffee Estate -></a>
+            </div>
           </div>
 
-          <div>
-            
+          <div class="flex flex-col md:flex-1 gap-5 px-4">
+            <h1 class="text-center font-h1 text-3xl md:text-4xl mt-4 md:mt-0">Get In Touch</h1>
+            <div>
+              <h4 class="text-lg md:text-xl">Have something on your mind?</h4>
+              <p class="font-thin md:text-lg">Drop us a message, call us, or swing by for a cup of coffee and a chat! We love meeting new people and helping however we can. Let’s connect and make your day a little brighter.</p>
+            </div>
+
+            <form class="w-full flex flex-col gap-4 font-thin" action="">
+              <div class="w-full flex flex-col">
+                <label class="mx-2 text-lg" for="fullname">Full Name</label>
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="fullname" id="fullname" placeholder="Enter your Full Name">
+              </div>
+              <div class="w-full flex flex-col">
+                <label class="mx-2 text-lg" for="email">Email Id</label>
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="email" id="email" placeholder="Enter your Email Id">
+              </div>
+              <div class="w-full flex flex-col">
+                <label class="mx-2 text-lg" for="password">Password</label>
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="password" id="password" placeholder="Enter your Full Name">
+              </div>
+              <div class="w-full flex flex-col">
+                <label class="mx-2 text-lg" for="contact">Contact No</label>
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="contact" id="contact" placeholder="Enter your Contact Number">
+              </div>
+
+              <div class="w-full flex flex-col">
+                <label class="mx-2 text-lg" for="message">Message</label>
+                <textarea class="bg-[#D9D9D9] text-lg px-3 py-1 rounded-md" name="message" id="message" cols="30" rows="6" placeholder="Enter your Message ......"></textarea>
+              </div>
+              <button type="submit" class="text-start bg-[#F8641B] max-w-28  px-4 py-2 md:px-6 md:py-3 md:max-w-36 rounded-3xl text-white md:text-xl">Submit -></button>
+            </form>
           </div>
         </div>
 
