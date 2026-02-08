@@ -15,7 +15,7 @@ A simple and responsive Cafe Webpage built using basic web technologies. This pr
 
 🛠️ Built With
 	•	HTML5
-	•	CSS3
+	•	CSS3 & Tailwind CSS
 	•	JavaScript (optional)
 
 ⸻
