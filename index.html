@@ -5,42 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MModern Brew</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
 
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    body{
-      background-color: black;
-    }
-    .font-h1{
-      font-family: roboto-serif;
-      font-weight:lighter;
-    }
-    a{
-      text-decoration: none;
-    }
-    .hero{
-      background-image: url("./assets/HeroImg.png");
-      /* height: 100vh;
-      width: 100vw; */
-      background-size: cover;
-      background-position: center;
-    }
-    .li-heading{
-      font-size:large;
-      font-family: roboto-serif;
-    }
-    .li-para{
-      font-weight:200;
-    }
-    .sec-footer{
-      background-image: url("assets/FooterImg.png");
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
 </head>
 <body>
 
@@ -48,17 +14,17 @@
   <header class="relative">
       <div class="sticky top-0 flex bg-black/80 items-center justify-between backdrop-blur-md px-4 py-2 md:px-20 md:py-4 text-white">
         <a href="#">
-            <img class="h-16 md:h-24 rounded-[50%]" src="./assets/Logo.png" alt="logoImg" >
+            <img class="h-16 md:h-24 rounded-[50%]" src="./assets/images/Logo.png" alt="logoImg" >
         </a>
 
         <nav class="hidden items-center md:flex justify-between gap-[6vw] ">
             <ul class="flex justify-center items-center text-xl gap-[4vw]">
               <li><a href="#">Home</a></li>
-              <li><a href="/menu.html">Menu</a></li>
-              <li><a href="/index.html#ourServices">Services</a></li>
+              <li><a href="./pages/menu.html">Menu</a></li>
               <li><a href="/index.html#aboutUs">About</a></li>
+              <li><a href="/index.html#ourServices">Services</a></li>
             </ul>
-            <a class="bg-[#2B4A72] px-4 py-2 rounded-3xl" href="/contact.html">Contact us</a>
+            <a class="bg-[#2B4A72] px-4 py-2 rounded-3xl" href="./pages/contact.html">Contact us</a>
         </nav>
 
         <div id="menuTab" class="md:hidden">
@@ -122,7 +88,7 @@
         </li>
       </ol>
 
-      <img class="hidden md:flex min-w-[250px] mr-10" src="./assets/drink.png" alt="Iced Coffee" width="200">
+      <img class="hidden md:flex min-w-[250px] mr-10" src="./assets/images/drink.png" alt="Iced Coffee" width="200">
     </div>
   </section>
 
@@ -134,7 +100,7 @@
     </div>
 
     <div class="flex justify-between items-center gap-5 md:px-20 md:mt-16">
-      <img class="hidden md:flex w-[250px]" src="./assets/barista.png" alt="Barista making coffee" width="300">
+      <img class="hidden md:flex w-[250px]" src="./assets/images/barista.png" alt="Barista making coffee" width="300">
 
       <ol class="text-start flex flex-col gap-5 max-w-[700px] md:mr-10">
         <li >
@@ -174,6 +140,6 @@
     </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>
