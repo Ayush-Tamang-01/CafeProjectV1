@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navigation -->
-  <header class="relative">
+  <header class="sticky top-0 relative">
       <div class="sticky top-0 flex bg-black/80 items-center justify-between backdrop-blur-md px-4 py-2 md:px-20 md:py-4 text-white">
         <a href="../index.html">
             <img class="h-16 md:h-24 rounded-[50%]" src="../assets/images/Logo.png" alt="logoImg" >
@@ -92,27 +92,27 @@
               <p class="font-thin md:text-lg">Drop us a message, call us, or swing by for a cup of coffee and a chat! We love meeting new people and helping however we can. Let’s connect and make your day a little brighter.</p>
             </div>
 
-            <form class="w-full flex flex-col gap-4 font-thin" action="">
+            <form id="contactForm" class="w-full flex flex-col gap-4 font-thin">
               <div class="w-full flex flex-col">
                 <label class="mx-2 text-lg" for="fullname">Full Name</label>
-                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="fullname" id="fullname" placeholder="Enter your Full Name">
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="fullname" minlength="3" id="fullname" required placeholder="Enter your Full Name">
               </div>
               <div class="w-full flex flex-col">
                 <label class="mx-2 text-lg" for="email">Email Id</label>
-                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="email" id="email" placeholder="Enter your Email Id">
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="email" name="email" id="email" required placeholder="Enter your Email Id">
               </div>
               <div class="w-full flex flex-col">
                 <label class="mx-2 text-lg" for="password">Password</label>
-                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="password" id="password" placeholder="Enter your Full Name">
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="password" name="password" id="password" required  placeholder="Enter your Password">
               </div>
               <div class="w-full flex flex-col">
                 <label class="mx-2 text-lg" for="contact">Contact No</label>
-                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="text" name="contact" id="contact" placeholder="Enter your Contact Number">
+                <input class="px-3 py-1 text-lg bg-[#D9D9D9] rounded-md" type="tel" name="contact" id="contact" maxlength="10" required  placeholder="Enter your Contact Number">
               </div>
 
               <div class="w-full flex flex-col">
                 <label class="mx-2 text-lg" for="message">Message</label>
-                <textarea class="bg-[#D9D9D9] text-lg px-3 py-1 rounded-md" name="message" id="message" cols="30" rows="6" placeholder="Enter your Message ......"></textarea>
+                <textarea class="bg-[#D9D9D9] text-lg px-3 py-1 rounded-md" name="message" id="message" cols="30" rows="6" required placeholder="Enter your Message ......"></textarea>
               </div>
               <button type="submit" class="text-start bg-[#F8641B] max-w-28  px-4 py-2 md:px-6 md:py-3 md:max-w-36 rounded-3xl text-white md:text-xl">Submit -></button>
             </form>
@@ -135,5 +135,7 @@
       <a href="#">Consumer Health and policy</a>
     </p>
   </footer>
+
+  <script src="../assets/js/script.js"></script>
 </body>
 </html>
